@@ -2,44 +2,29 @@
 
 **Hochschule Worms CSA 151 WS 2018/19**
 
-Gruppe X  
+Gruppe 9
 
-Peter Schmidt  
-inf1234567896@hs-worms.de   
-Matrikelnummer: 123456789
 
-Johannes Meier  
-inf1234567896@hs-worms.de   
-Matrikelnummer: 123456789
+Marco Bastuck
+inf2551@hs-worms.de   
+Matrikelnummer: 671515
+
+David Michel
+inf2702@hs-worms.de   
+Matrikelnummer: 672209
 
 ---
 
 ## Abstract
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Architecto cupiditate delectus dignissimos doloribus eius laborum nulla odio quos reiciendis vero! 
-Accusamus autem dignissimos dolores ducimus eos facilis illum incidunt ipsa minima natus pariatur perferendis quae quaerat, quia ratione reiciendis repellendus saepe sunt. 
-
-Ad consequatur, culpa deserunt eaque eligendi esse in inventore ipsam magnam minima mollitia nihil nulla numquam quas quasi ratione sunt voluptatum? 
-Animi aspernatur cum doloremque eaque eos facilis fugiat inventore laudantium perferendis quia. 
-Ab accusantium aperiam corporis cupiditate, dicta dolor, ea earum est eveniet excepturi fugiat harum ipsa itaque libero magnam maxime necessitatibus nihil omnis pariatur perspiciatis praesentium provident quis quo recusandae, reprehenderit similique ullam. 
-
-Aliquid aspernatur eum hic ipsa non! 
-Aut eos error ex expedita harum molestiae molestias perferendis porro rem, repellendus reprehenderit, vero. 
-
-Ab eveniet maiores obcaecati omnis praesentium quisquam quos veniam voluptatibus. Ea, libero, ratione. Autem cupiditate dolorem et, magni minima minus nisi quaerat recusandae repellendus voluptatibus! A, accusamus accusantium deleniti ducimus eius eveniet fugit illo in molestiae, nisi quod, saepe tempore velit! Assumenda est nobis porro suscipit veniam.
+Unsere Anwendung soll ein Quiz darstellen. Die wichtigsten Features die wir einbinden wollen, sind ein User-Login, verschiedene Kategorien, die der User wählen kann, innerhalb derer Fragen gestellt werden und ein Statistikteil, in dem der User verschiedenste Statistiken zu seinen bereits beantworteten Fragen einsehen kann. Die Implementierung der Fragen, des Logins und der Statistiken sollen über eine Datenbank realisiert werden, die der Client vom Server bei Bedarf abfragt. Innerhalb des User-Interfaces soll es zu dem auch möglich sein, die Statistiken nach bestimmten Gesichtspunkten zu sortieren.
 
 
 ## Abstract Client
-Verantwortlicher: Peter Schmidt
+Verantwortlicher: Marco Bastuck
 
-Animi aspernatur commodi consequatur libero nesciunt nisi, praesentium quidem repellendus sit sunt. Maiores, officia omnis!
+Der Client soll aus einer Login-Page bestehen, die einen nach dem Login zur Hauptseite navigiert. Hier soll mal ein neues Quiz anfangen können und die Statistiken einsehen können. Wenn ein neues Quiz angefangen wird, wird der User erst abgefragt, in welcher Kategorie er dieses spielen möchte. Innerhalb der Statistiken lassen sich noch verschiedene Parameter zur Sortierung und Anzeige auswählen, um die Statistiken den Wünschen des Users entsprechend zu filtern.
 
-Consequuntur incidunt iste neque nihil nulla omnis quam, saepe veritatis. Corporis labore maiores modi.
-
-Assumenda beatae deleniti distinctio earum eligendi harum illum in labore magni molestias nam, neque quaerat, quo sint sit totam voluptate voluptatum! Aliquam delectus dolorem ex laborum nihil odit tempora temporibus? Adipisci amet beatae culpa quae voluptatibus.
-
-Ab eveniet maiores obcaecati omnis praesentium quisquam quos veniam voluptatibus. Ea, libero, ratione. Autem cupiditate dolorem et, magni minima minus nisi quaerat recusandae repellendus voluptatibus! A, accusamus accusantium deleniti ducimus eius eveniet fugit illo in molestiae, nisi quod, saepe tempore velit! Assumenda est nobis porro suscipit veniam.
 
 
 ## Wireframe
@@ -47,51 +32,57 @@ Ab eveniet maiores obcaecati omnis praesentium quisquam quos veniam voluptatibus
 
 ## Mobil
 
-Assumenda beatae deleniti distinctio earum eligendi harum illum in labore magni molestias nam, neque quaerat, quo sint sit totam voluptate voluptatum! Aliquam delectus dolorem ex laborum nihil odit tempora temporibus? Adipisci amet beatae culpa quae voluptatibus.
+Im Folgenden Bild sind die Mobilversionen unserer einzelnen Screens zu sehen:
 
 
-![](wireframes/medium.jpeg)
+![](wireframes/mobile.jpeg)
 
 ## Desktop
 
-Consequuntur incidunt iste neque nihil nulla omnis quam, saepe veritatis. Corporis labore maiores modi.
+Folgend sind die einzelnen Screens, die im Browser erscheinen sollen, zu sehen:
 
-### Homepage
+### Login
 
-Lorem ipsum dolor sit amet, consectetur.
+Hier kann der User sich einloggen und bei Bedarf sich neu registrieren. Nach dem Login wird er auf die MainPage geleitet.
 
-![](wireframes/Homepage.png)
+![](wireframes/Login.png)
 
-### Pricing
+### Register
 
-Cumque delectus laboriosam magnam maxime nam porro possimus quos recusandae!
+Hier kann der User einen neuen Account anlegen. Nach der Anlegung wird er eingeloggt und zur Mainpage weitergeleitet.
 
-![](wireframes/Pricing.png)
+![](wireframes/Register.png)
 
-### Signup
+### MainPage
 
-Autem cupiditate eius est ex iure necessitatibus officiis omnis porro quod sequi?
-![](wireframes/Signup.png)
+Hier kann der User sowohl ein neues Quiz starten, als auch seine bisherigen Statistiken anschauen!
 
-### Registered
+![](wireframes/Main_Page.png)
 
-Lorem ipsum dolor sit amet, consectetur.
+### Category
 
-![](wireframes/Registered.png)
+Wenn der User in der Mainpage auf "New Quiz" geklickt hat, kann er nun hier eine Kategorie für eben dieses auswählen.
 
-### Support
+![](wireframes/Categorie.png)
 
-Consequuntur incidunt iste neque nihil nulla omnis quam, saepe veritatis. Corporis labore maiores modi.
+### Questions
+
+Hier werden die einzelnen Fragen dargestellt, durch die der User sich durch Auswählen der Antworten durchbewegt.
+
+![](wireframes/Questions.png)
 
 
-![](wireframes/Support.png)
+### Statistics
+
+Hier kann der User seine userspezifischen Statistiken einsehen.
+
+![](wireframes/statisticsNew.png)
 
 
 ## Abstract Server
-Verantwortlicher: Johannes Meier
+Verantwortlicher: David Michel
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur incidunt iste neque nihil nulla omnis quam, saepe veritatis. Corporis labore maiores modi.
-
+Der Server verwaltet die Datenbank, die User, Statistiken und Fragenkatalog enthält. Er schickt auf Anfrage die entsprechenden Informationen an den Client und "verifiziert" auch den Login, wobei das Passwort hier fürs Erste nur im Klartext gespeichert wird.
 
 ## ORM
 
@@ -103,17 +94,21 @@ Consequuntur incidunt iste neque nihil nulla omnis quam, saepe veritatis. Corpor
 
 Animi aspernatur commodi consequatur libero nesciunt nisi, praesentium quidem repellendus sit sunt. Maiores, officia omnis!
 
-![](orm/Concrete_Table_Inheritance.svg)
+![](orm/quizORM.jpeg)
 
 
 ## API-Beschreibung
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur, doloribus hic impedit quaerat quam quas qui voluptas voluptatibus! Eius facere harum nisi repellendus vel.
 
-### `GET /foo`
+### `GET /login`
 In dieser Route nimmt der Server Lorem entgegen.
 Als Antwort liefert er ein ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur, doloribus hic impedit quaerat quam quas qui voluptas voluptatibus! Eius facere harum nisi repellendus vel.
 
-### `POST /foo`
+### `GET /register`
+In dieser Route nimmt der Server Lorem entgegen.
+Als Antwort liefert er ein ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur, doloribus hic impedit quaerat quam quas qui voluptas voluptatibus! Eius facere harum nisi repellendus vel.
+
+### `POST /loggedIn`
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequuntur, doloribus hic impedit quaerat quam quas qui voluptas voluptatibus! Eius facere harum nisi repellendus vel.
 
 ### `PUT /foo`
