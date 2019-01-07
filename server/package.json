@@ -4,6 +4,9 @@
   "description": "server for our quizapplication",
   "main": "app.js",
   "scripts": {
+    "start": "node ./server.js",
+    "develop": "nodemon server.js",
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "david michel & marco bastuck",
