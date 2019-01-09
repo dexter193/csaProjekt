@@ -130,8 +130,8 @@ app.get('/check_if_right_answer/:id', (res, req) => {
         })
         .catch( err =>{
             res.send({
-                success: false
-                msg: 'access failed'
+                success: false,
+                msg: 'access failed',
                 err: err
             });
         });
