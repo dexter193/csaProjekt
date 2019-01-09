@@ -73,25 +73,28 @@ app.get('/', (req, res) => {
 });
 
 
-//call for category
+//call to get  rabdin question from called category
 app.get('/questions/:category', (req, res)=> {
-    //console.log(req.params);
+    let random_number = Math.floor((Math.random() *2) +1);
     db.get_row( `SELECT
-    questions.question_content
+    questions.question_content, questions.a, questions.b, questions.c, questions.d
     FROM
     questions
     WHERE
+    questions.category = ?
+    AND
     questions.id = ?
     `
-        ,[+req.params.category]
+        ,[req.params.category, random_number]
 
     )
         .then( row => {
 
             res.send({
-                msg: 'hallo',
+                msg: "access super",
                 success : true,
-                data: row
+                data: row,
+                question_id: random_number
             });
         })
         .catch( err => {
@@ -104,6 +107,35 @@ app.get('/questions/:category', (req, res)=> {
 });
 
 
+app.get('/check_if_right_answer/:id', (res, req) => {
+
+    db.get_row(
+        `SELECT
+        correct_answer
+        FROM
+        answers
+        WHERE
+        answers.id =?
+        `
+        , [req.params.id]
+    )
+        .then( row=> {
+
+            res.send({
+                msg: "access super",
+                success: true,
+
+
+            })
+        })
+        .catch( err =>{
+            res.send({
+                success: false
+                msg: 'access failed'
+                err: err
+            });
+        });
+});
 
 
 

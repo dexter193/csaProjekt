@@ -97,7 +97,7 @@ class DB {
      * @param params
      * @returns {Promise<any>}
      */
-    cmd(sql = '', ...params) {
+    cmd(sql = '', params) {
         return new Promise((resolve, reject) => {
             this.db.run(sql, params, function (err) {
                 if (err !== null) reject(err);
@@ -113,7 +113,7 @@ class DB {
      * @param params
      * @returns {Promise<any>}
      */
-    get_row(sql = '', ...params) {
+    get_row(sql = '', params) {
         return new Promise((resolve, reject) => {
             this.db.get(sql, params, (err, row) => {
                 if (err !== null) {
@@ -132,7 +132,7 @@ class DB {
      * @param params
      * @returns {Promise<any>}
      */
-    get_rows(sql = '', ...params) {
+    get_rows(sql = '', params) {
         return new Promise((resolve, reject) => {
             this.db.all(sql, params, (err, rows) => {
                 if (err !== null) {
